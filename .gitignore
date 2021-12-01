@@ -1,15 +1,39 @@
-# Various IDEs and Editors
-.vscode/
-.idea/
-**/*~
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Mac OSX temporary files
+# dependencies
+.vessel
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/.dfx
+src/declarations
+/build
+
+/dist
+
+# misc
 .DS_Store
-**/.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.history
 
-# dfx temporary files
-.dfx/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# frontend code
-node_modules/
-dist/
+.eslintcache
+
+# IDEs
+/.idea
+/.vscode
+/.history
+
+# no use
+*.bad
